@@ -9,10 +9,13 @@ public class Main extends JFrame {
 	public Main() {
 		setTitle(WINDOW_TITLE);
 		setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-		setResizable(false);
+		setResizable(true);   //resizable is now true
 		add(new PongPanel());
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		//Changes for the experiment_1 branch
+		
 		
 	}
 	
@@ -20,6 +23,7 @@ public class Main extends JFrame {
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				new Main();
+				
 			}
 		});
 	}
